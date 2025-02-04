@@ -4,7 +4,7 @@ namespace _02.Passed
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             var grade = double.Parse(Console.ReadLine());
 

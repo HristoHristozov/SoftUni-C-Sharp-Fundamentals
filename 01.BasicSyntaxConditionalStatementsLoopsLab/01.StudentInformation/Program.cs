@@ -1,10 +1,8 @@
-﻿using System;
-
-namespace BasicSyntaxConditionalStatementsLoopsLab
+﻿namespace _01.StudentInformation
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             var studentName = Console.ReadLine();
             var age = int.Parse(Console.ReadLine());

@@ -3,31 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.StudentInformation", "BasicSyntaxConditionalStatementsLoopsLab\01.StudentInformation.csproj", "{2A64BA44-DA99-4594-8307-7114A9544D18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.Passed", "02.Passed\02.Passed.csproj", "{E31C0769-A9C3-49FE-A44B-0DAAC03AAB38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.Passed", "02.Passed\02.Passed.csproj", "{E31C0769-A9C3-49FE-A44B-0DAAC03AAB38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.PassedOrFailed", "03.PassedOrFailed\03.PassedOrFailed.csproj", "{79645F83-F985-4295-83A8-64A65FEBCA31}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.PassedOrFailed", "03.PassedOrFailed\03.PassedOrFailed.csproj", "{79645F83-F985-4295-83A8-64A65FEBCA31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04.BackIn30Minutes", "04.BackIn30Minutes\04.BackIn30Minutes.csproj", "{683CA3C2-6E37-44DA-9CDB-1A37FB894DAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.BackIn30Minutes", "04.BackIn30Minutes\04.BackIn30Minutes.csproj", "{683CA3C2-6E37-44DA-9CDB-1A37FB894DAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05.MonthPrinter", "05.MonthPrinter\05.MonthPrinter.csproj", "{6D2AA888-C913-4957-8618-397DCFA6DD88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.MonthPrinter", "05.MonthPrinter\05.MonthPrinter.csproj", "{6D2AA888-C913-4957-8618-397DCFA6DD88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06.ForeignLanguages", "06.ForeignLanguages\06.ForeignLanguages.csproj", "{9305821D-0AB4-426D-A087-E7C95D8E5DBB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.ForeignLanguages", "06.ForeignLanguages\06.ForeignLanguages.csproj", "{9305821D-0AB4-426D-A087-E7C95D8E5DBB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07.TheatrePromotion", "07.TheatrePromotion\07.TheatrePromotion.csproj", "{36A9E899-24D6-4CDE-ABF6-CEEE6E2D87F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.TheatrePromotion", "07.TheatrePromotion\07.TheatrePromotion.csproj", "{36A9E899-24D6-4CDE-ABF6-CEEE6E2D87F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08.Divisibleby3", "08.Divisibleby3\08.Divisibleby3.csproj", "{FAE975F1-6117-4834-BE73-669CC126E732}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.Divisibleby3", "08.Divisibleby3\08.Divisibleby3.csproj", "{FAE975F1-6117-4834-BE73-669CC126E732}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09.SumOfOddNumbers", "09.SumOfOddNumbers\09.SumOfOddNumbers.csproj", "{40786052-B3EA-4F3A-B977-3E06E6BF57A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.SumOfOddNumbers", "09.SumOfOddNumbers\09.SumOfOddNumbers.csproj", "{40786052-B3EA-4F3A-B977-3E06E6BF57A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10.MultiplicationTable", "10.MultiplicationTable\10.MultiplicationTable.csproj", "{1C5B969B-4529-44AC-AB01-67C6BDDBCD20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.MultiplicationTable", "10.MultiplicationTable\10.MultiplicationTable.csproj", "{1C5B969B-4529-44AC-AB01-67C6BDDBCD20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11.MultiplicationTable2.0", "11.MultiplicationTable2.0\11.MultiplicationTable2.0.csproj", "{518B480C-F0B4-4361-ADAC-ED60FD491E38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.MultiplicationTable2.0", "11.MultiplicationTable2.0\11.MultiplicationTable2.0.csproj", "{518B480C-F0B4-4361-ADAC-ED60FD491E38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12.EvenNumber", "12.EvenNumber\12.EvenNumber.csproj", "{EA24DF5F-A056-47BB-99BD-E030C3D9FFD3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.EvenNumber", "12.EvenNumber\12.EvenNumber.csproj", "{EA24DF5F-A056-47BB-99BD-E030C3D9FFD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13.HolidaysBetweenTwoDates", "13.HolidaysBetweenTwoDates\13.HolidaysBetweenTwoDates.csproj", "{B59D001F-A74B-4564-B34A-C0E0AA1B728C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.HolidaysBetweenTwoDates", "13.HolidaysBetweenTwoDates\13.HolidaysBetweenTwoDates.csproj", "{B59D001F-A74B-4564-B34A-C0E0AA1B728C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.StudentInformation", "01.StudentInformation\01.StudentInformation.csproj", "{DB6DF0DE-BEFA-46E8-A913-5A401B7F7040}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2A64BA44-DA99-4594-8307-7114A9544D18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2A64BA44-DA99-4594-8307-7114A9544D18}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2A64BA44-DA99-4594-8307-7114A9544D18}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2A64BA44-DA99-4594-8307-7114A9544D18}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E31C0769-A9C3-49FE-A44B-0DAAC03AAB38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E31C0769-A9C3-49FE-A44B-0DAAC03AAB38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E31C0769-A9C3-49FE-A44B-0DAAC03AAB38}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -87,6 +83,10 @@ Global
 		{B59D001F-A74B-4564-B34A-C0E0AA1B728C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B59D001F-A74B-4564-B34A-C0E0AA1B728C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B59D001F-A74B-4564-B34A-C0E0AA1B728C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB6DF0DE-BEFA-46E8-A913-5A401B7F7040}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB6DF0DE-BEFA-46E8-A913-5A401B7F7040}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB6DF0DE-BEFA-46E8-A913-5A401B7F7040}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB6DF0DE-BEFA-46E8-A913-5A401B7F7040}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

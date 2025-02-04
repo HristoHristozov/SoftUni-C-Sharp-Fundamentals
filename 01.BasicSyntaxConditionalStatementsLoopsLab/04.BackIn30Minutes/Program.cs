@@ -4,7 +4,7 @@ namespace _04.BackIn30Minutes
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             var hours = int.Parse(Console.ReadLine());
             var minutes = int.Parse(Console.ReadLine());
