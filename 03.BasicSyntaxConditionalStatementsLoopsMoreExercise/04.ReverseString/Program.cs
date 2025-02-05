@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             string input = Console.ReadLine();
             char[] inputToCharArr = input.ToCharArray();

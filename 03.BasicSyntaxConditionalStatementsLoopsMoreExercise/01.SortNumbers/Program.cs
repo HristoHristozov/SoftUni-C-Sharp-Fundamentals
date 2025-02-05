@@ -2,13 +2,13 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int firstNum = int.Parse(Console.ReadLine());
             int secondNum = int.Parse(Console.ReadLine());
             int thirdNum = int.Parse(Console.ReadLine());
 
-            int[] numbers = {firstNum,secondNum,thirdNum };
+            int[] numbers = {firstNum,secondNum,thirdNum};
             Array.Sort(numbers);
             Array.Reverse(numbers);
 

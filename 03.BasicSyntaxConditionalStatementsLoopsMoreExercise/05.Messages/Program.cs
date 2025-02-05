@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int buttonPress = int.Parse(Console.ReadLine());
             string message = "";
@@ -27,9 +27,7 @@
 
                 int letterIndex = offset + digitLenght - 1;
                 message += (char)(letterIndex + 97);
-
             }
-
             Console.WriteLine(message);
 
         }

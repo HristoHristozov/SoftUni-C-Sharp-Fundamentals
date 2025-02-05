@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int input = int.Parse(Console.ReadLine());
 
@@ -40,7 +40,6 @@
                 case 0:
                     Console.WriteLine("zero");
                     break;
-
             }
         }
     }
