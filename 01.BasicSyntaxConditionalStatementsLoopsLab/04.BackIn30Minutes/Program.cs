@@ -20,14 +20,8 @@ namespace _04.BackIn30Minutes
             {
                 hours = 0;
             }
-            
-            minutes = Math.Abs(minutes);
-            if (minutes < 10)
-            {
-                Console.WriteLine($"{hours}:0{minutes}");
-            }
-            else
-            Console.WriteLine($"{hours}:{minutes}");
+
+            Console.WriteLine($"{hours}:{minutes:D2}");
         }
     }
 }
