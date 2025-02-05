@@ -4,12 +4,13 @@ namespace _01.Ages
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int age = int.Parse(Console.ReadLine());
 
             string ages = "";
-            if (age >= 0 && age <= 2)
+
+            if (age >= 0 && age < 3)
             {
                 ages = "baby";
             }
@@ -25,7 +26,7 @@ namespace _01.Ages
             {
                 ages = "adult";
             }
-            else if (age >= 66)
+            else if (age > 65)
             {
                 ages = "elder";
             }

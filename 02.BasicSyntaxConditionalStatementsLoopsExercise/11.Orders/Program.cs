@@ -4,7 +4,7 @@ namespace _11.Orders
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int countOfOrders = int.Parse(Console.ReadLine());
 

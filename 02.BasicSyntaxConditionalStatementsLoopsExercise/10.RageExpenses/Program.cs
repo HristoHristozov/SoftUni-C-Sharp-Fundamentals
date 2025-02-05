@@ -5,7 +5,7 @@ namespace _10.RageExpenses
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int lostGamesCount = int.Parse(Console.ReadLine());
             double headsetPrice = double.Parse(Console.ReadLine());

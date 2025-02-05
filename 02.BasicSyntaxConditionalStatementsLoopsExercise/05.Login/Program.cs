@@ -4,7 +4,7 @@ namespace _05.Login
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             string userName = Console.ReadLine();
 
@@ -16,9 +16,7 @@ namespace _05.Login
             int blockedCounter = 0;
             while (true)
             {
-
                 string input = Console.ReadLine();            
-
 
                 if (input != password)
                 {
@@ -27,22 +25,18 @@ namespace _05.Login
                     {
                         Console.WriteLine("Incorrect password. Try again.");
                     }
-                    
+                    else
+                    {
+                        Console.WriteLine($"User {userName} blocked!");
+                        break;
+                    }
                 }
-                if (blockedCounter >= 4)
-                {
-                    Console.WriteLine($"User {userName} blocked!");
-                    break;
-                }
-
                 else if (input == password)
                 {
                     Console.WriteLine($"User {userName} logged in.");
                     break;
                 }
             }
-
-
 
         }
     }

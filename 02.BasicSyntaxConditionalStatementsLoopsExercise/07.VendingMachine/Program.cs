@@ -6,7 +6,7 @@ namespace _07.VendingMachine
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             string input = "";
 
@@ -54,8 +54,7 @@ namespace _07.VendingMachine
                         Console.WriteLine("Purchased coke");
                         sum -= 1;
                     }
-                    else Console.WriteLine("Sorry, not enough money");
-                    
+                    else Console.WriteLine("Sorry, not enough money"); 
                 }
 
                 else if (input == "Soda")
@@ -66,7 +65,6 @@ namespace _07.VendingMachine
                         Console.WriteLine("Purchased soda");
                     }
                     else Console.WriteLine("Sorry, not enough money");
-
                 }
 
                 else if (input == "Crisps" && sum >= 1.5)
@@ -77,7 +75,6 @@ namespace _07.VendingMachine
                         Console.WriteLine("Purchased crisps");
                     }
                     else Console.WriteLine("Sorry, not enough money");
-
                 }
 
                 else if (input == "Water" && sum >= 0.7)
@@ -88,7 +85,6 @@ namespace _07.VendingMachine
                         Console.WriteLine("Purchased water");
                     }
                     else Console.WriteLine("Sorry, not enough money");
-
                 }
 
                 else if (input == "Nuts" && sum >= 2)
@@ -99,9 +95,7 @@ namespace _07.VendingMachine
                         Console.WriteLine("Purchased nuts");
                     }
                     else Console.WriteLine("Sorry, not enough money");
-
                 }
-            
             }
 
             Console.WriteLine($"Change: {sum:F2}");
