@@ -4,7 +4,7 @@ namespace _07.TheatrePromotion
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             var typeOfDay = Console.ReadLine();
             var age = int.Parse(Console.ReadLine());
@@ -63,12 +63,8 @@ namespace _07.TheatrePromotion
             {
                 Console.WriteLine($"{price}$");
             }
+            else Console.WriteLine("Error!");
 
-
-            else 
-            {
-                Console.WriteLine("Error!");
-            }
         }
     }
 }

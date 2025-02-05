@@ -4,7 +4,7 @@ namespace _11.MultiplicationTable2._0
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int theMulpiplicator = int.Parse(Console.ReadLine());
             int timesToMultiplicate = int.Parse(Console.ReadLine());

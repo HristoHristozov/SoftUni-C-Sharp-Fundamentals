@@ -4,7 +4,7 @@ namespace _10.MultiplicationTable
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int theMultiplicator = int.Parse(Console.ReadLine());
 
