@@ -2,12 +2,13 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             double britishPound = double.Parse(Console.ReadLine());
 
-            double convertToUSD = britishPound * 1.31;
-            Console.WriteLine($"{convertToUSD:F3}");
+            double dollar = britishPound * 1.31;
+
+            Console.WriteLine($"{dollar:F3}");
         }
     }
 }

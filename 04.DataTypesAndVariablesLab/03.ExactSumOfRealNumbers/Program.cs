@@ -2,17 +2,20 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            int numbersToEnter = int.Parse(Console.ReadLine());
+            int inputCount = int.Parse(Console.ReadLine());
+
             decimal sum = 0;
-            for (int i = 1; i <= numbersToEnter; i++)
+
+            for (int i = 0; i < inputCount; i++)
             {
-                decimal input = decimal.Parse(Console.ReadLine());
-                sum += input;
+                decimal currentNum = decimal.Parse(Console.ReadLine());
+                sum += currentNum;
             }
 
             Console.WriteLine(sum);
+
         }
     }
 }

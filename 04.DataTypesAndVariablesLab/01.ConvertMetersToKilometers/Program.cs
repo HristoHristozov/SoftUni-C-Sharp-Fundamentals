@@ -2,15 +2,13 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int distanceInMeters = int.Parse(Console.ReadLine());
 
             double convertToKM = distanceInMeters / 1000.0;
 
             Console.WriteLine($"{convertToKM:F2}");
-
-
 
         }
     }

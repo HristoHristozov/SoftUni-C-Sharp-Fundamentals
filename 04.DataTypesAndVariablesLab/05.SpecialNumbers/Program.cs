@@ -2,33 +2,28 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            int numRange = int.Parse(Console.ReadLine());
+            int input = int.Parse(Console.ReadLine());
 
-
-            for (int i = 1; i <= numRange; i++)
+            for (int i = 1; i <= input; i++)
             {
                 bool isSpecial = false;
-                int number = i;
+                int currentNumber = i;
                 int sum = 0;
-                while (number != 0)
+                while (currentNumber != 0)
                 {
-                    int lastDigit = number % 10;
-                    number /= 10;
+                    int lastDigit = currentNumber % 10;
+                    currentNumber /= 10;
                     sum += lastDigit;
-
                 }
 
                 if (sum == 5 || sum == 7 || sum == 11)
                 {
                     isSpecial = true;
                 }
-
                 Console.WriteLine($"{i} -> {isSpecial}");
             }
-            
-
 
         }
     }

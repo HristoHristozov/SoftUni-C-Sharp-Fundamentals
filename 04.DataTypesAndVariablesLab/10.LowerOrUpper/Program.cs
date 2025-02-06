@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             char firstChar = char.Parse(Console.ReadLine());
 
