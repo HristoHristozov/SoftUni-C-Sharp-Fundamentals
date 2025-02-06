@@ -4,21 +4,21 @@ namespace _10.PokeMon
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int pokePower = int.Parse(Console.ReadLine());
-            int pokeDistance = int.Parse(Console.ReadLine());
+            int distance = int.Parse(Console.ReadLine());
             int exhaustionFactor = int.Parse(Console.ReadLine());
 
-            int originalN = pokePower;
-            int targetPokedCount = 0;
+            int targetsPoked = 0;
+            int originalPower = pokePower;
 
-            while (pokePower >= pokeDistance)
+            while (pokePower >= distance)
             {
-                pokePower -= pokeDistance;
-                targetPokedCount++;
+                pokePower -= distance;
+                targetsPoked++;
 
-                double percent = originalN * 0.5d;
+                double percent = originalPower * 0.5d;
                 if (percent == pokePower && exhaustionFactor != 0)
                 {
                     pokePower /= exhaustionFactor;
@@ -26,7 +26,7 @@ namespace _10.PokeMon
             }
 
             Console.WriteLine(pokePower);
-            Console.WriteLine(targetPokedCount);
+            Console.WriteLine(targetsPoked);
         }
     }
 }

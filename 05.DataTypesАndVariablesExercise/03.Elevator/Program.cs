@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int numberOfPeople = int.Parse(Console.ReadLine());
             int elevatorCapacity = int.Parse(Console.ReadLine());

@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int numberOfPours = int.Parse(Console.ReadLine());
 
@@ -18,7 +18,6 @@
                 else if(tankCapacity - litersOfWater < 0)
                 {
                     Console.WriteLine("Insufficient capacity!");
-                    continue;
                 }
             }
 

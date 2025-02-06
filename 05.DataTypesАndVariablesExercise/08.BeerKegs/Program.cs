@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int beerKegs = int.Parse(Console.ReadLine());
 
@@ -14,14 +14,12 @@
                 decimal kegRadius = decimal.Parse(Console.ReadLine());
                 int kegHeight = int.Parse(Console.ReadLine());
 
-
                 decimal volume = (decimal)Math.PI * kegRadius * kegRadius * kegHeight;
                 if (volume > biggestVolume)
                 {
                     biggestVolume = volume;
                     biggestKeg = kegModel;
                 }
-
             }
 
             Console.WriteLine(biggestKeg);

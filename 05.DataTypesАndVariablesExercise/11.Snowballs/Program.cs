@@ -4,7 +4,7 @@ namespace _11.Snowballs
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int snowballsMade = int.Parse(Console.ReadLine());
 
@@ -31,8 +31,6 @@ namespace _11.Snowballs
             }
 
             Console.WriteLine($"{bestsnowballSnow} : {bestsnowballTime} = {bestSnowballValue} ({bestSnowballQuality})");
-
-
         }
     }
 }

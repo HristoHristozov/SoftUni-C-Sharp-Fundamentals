@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int n = int.Parse(Console.ReadLine());
 
@@ -16,13 +16,9 @@
                         char secondChar = (char)('a' + j);
                         char thirdChar = (char)('a' + k);
                         Console.WriteLine($"{firstChar}{secondChar}{thirdChar}");
-
                     }
                 }
             }
-
-
-
         }
     }
 }

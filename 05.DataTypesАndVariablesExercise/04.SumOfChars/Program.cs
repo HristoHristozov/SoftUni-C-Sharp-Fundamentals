@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int characters = int.Parse(Console.ReadLine());
 
@@ -15,8 +15,6 @@
             }
 
             Console.WriteLine($"The sum equals: {sum}");
-
-
 
         }
     }

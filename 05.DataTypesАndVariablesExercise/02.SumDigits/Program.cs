@@ -2,11 +2,12 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int number = int.Parse(Console.ReadLine());
 
             int sum = 0;
+
             while (number != 0)
             {
                 int lastDigit = number % 10;

@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int startASCII = int.Parse(Console.ReadLine());
             int endASCII = int.Parse(Console.ReadLine());

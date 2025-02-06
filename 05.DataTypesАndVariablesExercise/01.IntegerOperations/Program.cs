@@ -5,9 +5,8 @@ namespace _01.IntegerOperations
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            
             int firstInt = int.Parse(Console.ReadLine());
             int addToFirst = int.Parse(Console.ReadLine());
             int divideInt = int.Parse(Console.ReadLine());
