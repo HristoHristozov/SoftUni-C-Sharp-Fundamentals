@@ -2,9 +2,8 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            
             byte inputLines = byte.Parse(Console.ReadLine());
 
             byte countOpeningBrackets = 0;

@@ -2,19 +2,16 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-
             string input = "";
             int valueofInt;
             float valueOfFloat;
             char valueOfChar;
             bool valueOfBool;
 
-            while ((input = Console.ReadLine()) != "END")           
+            while ((input = Console.ReadLine()) != "END")
             {
-
-
                 if (int.TryParse(input, out valueofInt))
                 {
                     Console.WriteLine($"{input} is integer type");
@@ -34,10 +31,7 @@
                 {
                     Console.WriteLine($"{input} is boolean type");
                 }
-
                 else Console.WriteLine($"{input} is string type");
-
-
             }
 
         }
