@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             double firstNum = double.Parse(Console.ReadLine());
             double secondNum = double.Parse(Console.ReadLine());
@@ -12,9 +12,6 @@
             bool isEqual = Math.Abs(firstNum - secondNum) < eps;
 
             Console.WriteLine(isEqual);
-
-
-
         }
     }
 }

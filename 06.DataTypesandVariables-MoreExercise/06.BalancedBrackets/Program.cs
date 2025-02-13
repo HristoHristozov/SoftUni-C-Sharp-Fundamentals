@@ -25,18 +25,10 @@
                         Console.WriteLine("UNBALANCED");
                         return;
                     }
+
+                    else Console.WriteLine("BALANCED");
                 }
             }
-
-            if (countOpeningBrackets == countClosingBrackets)
-            {
-                Console.WriteLine("BALANCED");
-            }
-            else
-            {
-                Console.WriteLine("UNBALANCED");
-            }
-
         }
     }
 }

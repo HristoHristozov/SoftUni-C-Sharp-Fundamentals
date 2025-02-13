@@ -2,10 +2,11 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             byte key = byte.Parse(Console.ReadLine());
             byte nCharacters = byte.Parse(Console.ReadLine());
+
             string message = "";
 
             for (int i = 1; i <= nCharacters; i++)
