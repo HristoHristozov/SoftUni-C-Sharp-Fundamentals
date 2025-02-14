@@ -18,7 +18,7 @@
                     return;
                 }
 
-                else arraySum += firstArray[i];
+                else arraySum += firstArray[i]; 
             }
 
             Console.WriteLine($"Arrays are identical. Sum: {arraySum}");
