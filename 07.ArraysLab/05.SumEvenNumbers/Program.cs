@@ -10,14 +10,11 @@
 
             for (int i = 0; i < numbers.Length; i++)
             {
-                int currentNum = numbers[i];
-
-                if (currentNum % 2 == 0)
+                if (numbers[i] % 2 == 0)
                 {
                     sum += numbers[i];
                 }
             }
-
             Console.WriteLine(sum);
 
         }

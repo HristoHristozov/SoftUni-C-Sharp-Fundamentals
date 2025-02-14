@@ -4,10 +4,11 @@
     {
         static void Main()
         {
-            string[] input = Console.ReadLine().Split().ToArray();
+            string[] input = Console.ReadLine()
+                .Split()
+                .ToArray();
 
             input = input.Reverse().ToArray();
-
 
             foreach (var item in input)
             {

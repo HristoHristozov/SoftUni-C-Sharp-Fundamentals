@@ -4,7 +4,10 @@
     {
         static void Main()
         {
-            double[] numbers = Console.ReadLine().Split(' ').Select(double.Parse).ToArray();
+            double[] numbers = Console.ReadLine()
+                .Split(' ')
+                .Select(double.Parse)
+                .ToArray();
 
             int[] roundedNums = new int[numbers.Length];
 
