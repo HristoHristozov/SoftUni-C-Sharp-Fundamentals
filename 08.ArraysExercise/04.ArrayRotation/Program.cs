@@ -4,22 +4,26 @@
     {
         static void Main()
         {
-            int[] input = Console.ReadLine().Split().Select(int.Parse).ToArray();
-            int rotations = int.Parse(Console.ReadLine());
+            int[] inputArray = Console.ReadLine()
+                .Split()
+                .Select(int.Parse)
+                .ToArray();
 
-            for (int i = 0; i < rotations; i++)
+            int numberOfRotations = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < numberOfRotations; i++)
             {
-                var temp = input[0];
+                int temp = inputArray[0];
 
-                for (int j = 0; j < input.Length - 1; j++)
+                for (int j = 0; j < inputArray.Length - 1; j++)
                 {
-                    input[j] = input[j + 1];
+                    inputArray[j] = inputArray[j + 1];
                 }
 
-                input[input.Length - 1] = temp;
+                inputArray[inputArray.Length - 1] = temp;
             }
 
-            Console.WriteLine(String.Join(' ', input));
+            Console.WriteLine(String.Join(' ', inputArray));
         }
     }
 }

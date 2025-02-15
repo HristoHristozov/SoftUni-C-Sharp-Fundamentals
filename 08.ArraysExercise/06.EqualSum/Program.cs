@@ -6,21 +6,39 @@ namespace _06.EqualSum
     {
         static void Main()
         {
-            int[] array = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            int[] num = Console.ReadLine()
+                .Split()
+                .Select(int.Parse)
+                .ToArray();
 
-            for (int i = 0; i < array.Length; i++)
+            bool isFound = false;
+
+            for (int i = 0; i < num.Length; i++)
             {
-                int leftSum = array.Take(i).Sum();
-                int rightSum = array.Skip(i + 1).Sum();
+                int leftSum = 0;
+                for (int k = 0; k < i; k++)
+                {
+                    leftSum += num[k];
+                }
 
-                if (leftSum == rightSum)
+                int rightSum = 0;
+                for (int j = num.Length - 1; j > i; j--)
+                {
+                    rightSum += num[j];
+                }
+
+                if (leftSum == rightSum && !isFound)
                 {
                     Console.WriteLine(i);
-                    return;
+                    isFound = true;
                 }
             }
 
-            Console.WriteLine("no");
+            if (!isFound)
+            {
+                Console.WriteLine("no");
+            }
+
         }
     }
 }

@@ -4,29 +4,32 @@
     {
         static void Main()
         {
-            int lines = int.Parse(Console.ReadLine());
+            int rows = int.Parse(Console.ReadLine());
 
-            int[] firstArr = new int[lines];
-            int[] secondArr = new int[lines];
+            int[] firstArr = new int[rows];
+            int[] secondArr = new int[rows];
 
-            for (int i = 0; i < lines; i++)
+            for (int i = 0; i < rows; i++)
             {
-                int[] input = Console.ReadLine().Split().Select(int.Parse).ToArray();
+                int[] tokens = Console.ReadLine()
+                    .Split()
+                    .Select(int.Parse)
+                    .ToArray();
 
                 if (i % 2 == 0)
                 {
-                    firstArr[i] = input[0];
-                    secondArr[i] = input[1];
+                    firstArr[i] = tokens[0];
+                    secondArr[i] = tokens[1];
                 }
                 else
                 {
-                    firstArr[i] = input[1];
-                    secondArr[i] = input[0];
+                    firstArr[i] = tokens[1];
+                    secondArr[i] = tokens[0];
                 }
             }
 
             Console.WriteLine(String.Join(" ", firstArr));
-            Console.WriteLine(String.Join(" ", secondArr));
+            Console.WriteLine(String.Join (" ", secondArr));
         }
     }
 }

@@ -12,18 +12,18 @@ namespace _02.CommonElements
 
             string commonElements = "";
 
-            foreach (string element in secondArr)
+            foreach (string element2 in secondArr)
             {
-                foreach (string value in firstArr)
+                foreach (string element in firstArr)
                 {
-                    if (element == value)
+                    if (element2.Equals(element))
                     {
-                        commonElements += element + " ";
+                        commonElements += element2 + " ";
                     }
-                }
+                }    
             }
 
-            Console.WriteLine(commonElements.TrimEnd());
+            Console.WriteLine(commonElements);
         }
     }
 }

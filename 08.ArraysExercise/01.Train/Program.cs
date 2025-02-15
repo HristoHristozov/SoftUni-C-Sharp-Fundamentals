@@ -4,21 +4,20 @@
     {
         static void Main()
         {
-            int lines = int.Parse(Console.ReadLine());
+            int numberOfWagons = int.Parse(Console.ReadLine());
 
-            int passengersSum = 0;
-            int[] allPassengers = new int[lines];
+            int[] people = new int[numberOfWagons];
+            int sumOfAllPassengers = 0;
 
-            for (int i = 0; i < lines; i++)
+            for (int i = 0; i < numberOfWagons; i++)
             {
-                int passengersPerWagon = int.Parse(Console.ReadLine());
-                allPassengers[i] = passengersPerWagon;
-                passengersSum += passengersPerWagon;
+                int passengersPerwagon = int.Parse(Console.ReadLine());
+                people[i] = passengersPerwagon;
+                sumOfAllPassengers += passengersPerwagon;
             }
 
-            Console.WriteLine(string.Join(" ", allPassengers));
-            Console.WriteLine(passengersSum);
-
+            Console.WriteLine(string.Join(" ", people));
+            Console.WriteLine(sumOfAllPassengers);
         }
     }
 }

@@ -4,15 +4,18 @@
     {
         static void Main()
         {
-            int[] input = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            int[] inputArray = Console.ReadLine()
+                .Split()
+                .Select(int.Parse)
+                .ToArray();
 
-            for (int i = 0; i < input.Length; i++)
+            for (int i = 0; i < inputArray.Length; i++)
             {
                 bool isBigger = true;
 
-                for (int j = i + 1; j < input.Length; j++)
+                for (int j = i + 1; j < inputArray.Length; j++)
                 {
-                    if (input[i] <= input[j])
+                    if (inputArray[i] <= inputArray[j])
                     {
                         isBigger = false;
                     }
@@ -20,7 +23,7 @@
 
                 if (isBigger)
                 {
-                    Console.Write(input[i] + " ");
+                    Console.Write(inputArray[i] + " ");
                 }
             }
         }
