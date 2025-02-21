@@ -6,14 +6,14 @@
         {
             int fieldSize = int.Parse(Console.ReadLine());
 
-            int[] ladybugsIndexes = Console.ReadLine()
+            int[] field = new int[fieldSize];
+
+            int[] ladyBugCurrentPlace = Console.ReadLine()
                 .Split()
                 .Select(int.Parse)
                 .ToArray();
 
-            int[] field = new int[fieldSize];
-
-            foreach (int index in ladybugsIndexes)
+            foreach (int index in ladyBugCurrentPlace)
             {
                 if (index >= 0 && index < fieldSize)
                 {
@@ -22,40 +22,43 @@
             }
 
             string command;
+
             while ((command = Console.ReadLine()) != "end")
             {
-                string[] commandParts = command.Split();
-                int initialIndex = int.Parse(commandParts[0]);
-                string direction = commandParts[1];
-                int flyLength = int.Parse(commandParts[2]);
+                string[] tokens = command.Split();
 
-                if (initialIndex < 0 || initialIndex >= fieldSize || field[initialIndex] != 1)
+                int ladybugIndex = int.Parse(tokens[0]);
+                string direction = tokens[1];
+                int flyLenght = int.Parse(tokens[2]);
+
+                if (ladybugIndex < 0 || ladybugIndex >= fieldSize || field[ladybugIndex] != 1)
                 {
                     continue;
                 }
 
-                field[initialIndex] = 0;
-                int nextIndex = initialIndex;
+                field[ladybugIndex] = 0;
+                int nextIndex = ladybugIndex;
 
                 while (true)
                 {
                     if (direction == "right")
                     {
-                        nextIndex += flyLength;
-                    }
-                    else if (direction == "left")
-                    {
-                        nextIndex -= flyLength;
+                        ladybugIndex += flyLenght;
                     }
 
-                    if (nextIndex < 0 || nextIndex >= fieldSize)
+                    else if (direction == "left")
+                    {
+                        ladybugIndex -= flyLenght;
+                    }
+
+                    if (ladybugIndex < 0 || ladybugIndex >= fieldSize)
                     {
                         break;
                     }
 
-                    if (field[nextIndex] == 0)
+                    if (field[ladybugIndex] == 0)
                     {
-                        field[nextIndex] = 1;
+                        field[ladybugIndex] = 1;
                         break;
                     }
                 }
