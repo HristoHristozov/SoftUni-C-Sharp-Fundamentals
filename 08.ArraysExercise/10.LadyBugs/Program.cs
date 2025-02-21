@@ -6,9 +6,12 @@
         {
             int fieldSize = int.Parse(Console.ReadLine());
 
-            int[] field = new int[fieldSize];
+            int[] ladybugsIndexes = Console.ReadLine()
+                .Split()
+                .Select(int.Parse)
+                .ToArray();
 
-            int[] ladybugsIndexes = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            int[] field = new int[fieldSize];
 
             foreach (int index in ladybugsIndexes)
             {
@@ -31,7 +34,7 @@
                     continue;
                 }
 
-                field[initialIndex] = 0; 
+                field[initialIndex] = 0;
                 int nextIndex = initialIndex;
 
                 while (true)

@@ -4,20 +4,24 @@
     {
         static void Main()
         {
-            int[] array = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            int[] inputArray = Console.ReadLine()
+                .Split()
+                .Select(int.Parse)
+                .ToArray();
 
-            int searchedSum = int.Parse(Console.ReadLine());
+            int magicSum = int.Parse(Console.ReadLine());
 
-            for (int i = 0; i < array.Length; i++)
+            for (int i = 0; i < inputArray.Length; i++)
             {
-                for (int j = i + 1; j < array.Length; j++)
+                for (int j = i+1; j < inputArray.Length; j++)
                 {
-                    if (array[i] + array[j] == searchedSum)
+                    if (inputArray[i] + inputArray[j] == magicSum)
                     {
-                        Console.WriteLine($"{array[i]} {array[j]}");
+                        Console.WriteLine($"{inputArray[i]} {inputArray[j]}");
                     }
                 }
             }
+
         }
     }
 }

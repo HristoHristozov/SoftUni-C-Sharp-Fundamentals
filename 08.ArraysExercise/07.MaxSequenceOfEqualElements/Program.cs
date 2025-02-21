@@ -4,15 +4,18 @@
     {
         static void Main()
         {
-            int[] array = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            int[] inputArray = Console.ReadLine()
+                .Split()
+                .Select(int.Parse)
+                .ToArray();
 
             int maxLength = 0;
             int bestStartIndex = 0;
             int currentLength = 1;
 
-            for (int i = 1; i < array.Length; i++)
+            for (int i = 1; i < inputArray.Length; i++)
             {
-                if (array[i] == array[i - 1])
+                if (inputArray[i] == inputArray[i - 1])
                 {
                     currentLength++;
                 }
@@ -30,12 +33,12 @@
             if (currentLength > maxLength)
             {
                 maxLength = currentLength;
-                bestStartIndex = array.Length - currentLength;
+                bestStartIndex = inputArray.Length - currentLength;
             }
 
             for (int i = 0; i < maxLength; i++)
             {
-                Console.Write(array[bestStartIndex] + " ");
+                Console.Write(inputArray[bestStartIndex] + " ");
             }
         }
     }
