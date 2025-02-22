@@ -4,14 +4,13 @@
     {
         static void Main()
         {
-            double rectangleASide = double.Parse(Console.ReadLine());
-            double rectangleBSide = double.Parse(Console.ReadLine());
+            double rectangleSideA = double.Parse(Console.ReadLine());
+            double rectangleSideB = double.Parse(Console.ReadLine());
 
-            double area = CalculateRectangleArea(rectangleASide, rectangleBSide);
-            Console.WriteLine(area);
+            Console.WriteLine(GetRectangleArea(rectangleSideA,rectangleSideB));
         }
 
-        static double CalculateRectangleArea(double a , double b)
+        static double GetRectangleArea(double a, double b)
         {
             return a * b;
         }

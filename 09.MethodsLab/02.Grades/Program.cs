@@ -1,4 +1,5 @@
 ﻿
+
 namespace _02.Grades
 {
     public class Program
@@ -10,7 +11,7 @@ namespace _02.Grades
             CheckGrade(grade);
         }
 
-        private static void CheckGrade(double grade)
+        static void CheckGrade(double grade)
         {
             if (grade > 1.99 && grade <= 2.99)
             {
@@ -28,7 +29,7 @@ namespace _02.Grades
             {
                 Console.WriteLine("Very good");
             }
-            else if (grade >=5.50 && grade <= 6.00)
+            else if (grade >= 5.50 && grade <= 6.00)
             {
                 Console.WriteLine("Excellent");
             }

@@ -5,21 +5,23 @@
         static void Main()
         {
             string input = Console.ReadLine();
-            int repeatInput = int.Parse(Console.ReadLine());
+            int timesToRepeat = int.Parse(Console.ReadLine());
 
-            string result = RepeatString(input,repeatInput);
-            Console.WriteLine(result);
+            Console.WriteLine(RepeatString(input,timesToRepeat));
         }
 
-        static string RepeatString(string str, int count)
+        static string RepeatString(string str, int repeat)
         {
             string result = "";
-            for (int i = 0; i < count; i++)
+
+            for (int i = 0; i < repeat; i++)
             {
                 result += str;
             }
 
             return result;
         }
+
+        
     }
 }

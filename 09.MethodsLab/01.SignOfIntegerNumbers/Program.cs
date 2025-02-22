@@ -9,7 +9,7 @@ namespace _01.SignOfIntegerNumbers
             CheckNumber(number);
         }
 
-        private static void CheckNumber(int number)
+        static void CheckNumber(int number)
         {
             if (number == 0)
             {

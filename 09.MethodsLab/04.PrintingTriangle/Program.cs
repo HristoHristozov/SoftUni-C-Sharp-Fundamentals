@@ -6,22 +6,21 @@
         {
             int triangleNums = int.Parse(Console.ReadLine());
 
-            PrintTraingle(triangleNums);
+            PrintTriangle(triangleNums);
         }
 
-        static void PrintTraingle(int n)
+        static void PrintTriangle(int triangleNums)
         {
-            for (int i = 1; i <= n; i++)
+            for (int i = 1; i <= triangleNums; i++)
             {
                 for (int j = 1; j <= i; j++)
                 {
                     Console.Write(j + " ");
-                    
                 }
                 Console.WriteLine();
             }
 
-            for (int row = n - 1; row >= 0; row--)
+            for (int row = triangleNums - 1; row >= 0; row--)
             {
                 for (int col = 1; col <= row; col++)
                 {

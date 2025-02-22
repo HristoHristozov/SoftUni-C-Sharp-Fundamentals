@@ -13,39 +13,53 @@
         {
             if (inputType == "int")
             {
-                int firstNum = int.Parse(Console.ReadLine());
-                int secondNum = int.Parse(Console.ReadLine());
-                if (firstNum > secondNum)
-                {
-                    Console.WriteLine(firstNum);
-                }
-                else Console.WriteLine(secondNum);
+                CheckInt();
             }
 
             else if (inputType == "char")
             {
-                char firstChar = char.Parse(Console.ReadLine());
-                char secondChar = char.Parse(Console.ReadLine());
-                if (firstChar > secondChar)
-                {
-                    Console.WriteLine(firstChar);
-                }
-                else Console.WriteLine(secondChar);
+                CheckChar();
             }
 
             else if (inputType == "string")
             {
-                string firstString = Console.ReadLine();
-                string secondString = Console.ReadLine();
-                int compareLinguistic = String.Compare(firstString, secondString, StringComparison.InvariantCulture);
-
-                if (compareLinguistic > 0)
-                {
-                    Console.WriteLine(firstString);
-                }
-                else Console.WriteLine(secondString);
+                CheckString();
             }
         }
 
+        static void CheckInt()
+        {
+            int firstNum = int.Parse(Console.ReadLine());
+            int secondNum = int.Parse(Console.ReadLine());
+            if (firstNum > secondNum)
+            {
+                Console.WriteLine(firstNum);
+            }
+            else Console.WriteLine(secondNum);
+        }
+
+        static void CheckChar()
+        {
+            char firstChar = char.Parse(Console.ReadLine());
+            char secondChar = char.Parse(Console.ReadLine());
+            if (firstChar > secondChar)
+            {
+                Console.WriteLine(firstChar);
+            }
+            else Console.WriteLine(secondChar);
+        }
+
+        static void CheckString()
+        {
+            string firstString = Console.ReadLine();
+            string secondString = Console.ReadLine();
+            int compareLinguistic = String.Compare(firstString, secondString, StringComparison.InvariantCulture);
+
+            if (compareLinguistic > 0)
+            {
+                Console.WriteLine(firstString);
+            }
+            else Console.WriteLine(secondString);
+        }
     }
 }

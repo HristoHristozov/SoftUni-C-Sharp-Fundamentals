@@ -12,8 +12,7 @@
 
         static double MathPower(double a, double b)
         {
-            double result = Math.Pow(a, b);
-            return result;
+            return Math.Pow(a, b);
         }
     }
 }
