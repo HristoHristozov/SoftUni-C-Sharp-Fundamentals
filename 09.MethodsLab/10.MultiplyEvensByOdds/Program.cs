@@ -13,6 +13,7 @@
         {
             int oddSum = 0;
             int number = Math.Abs(input);
+
             while (number != 0)
             {
                 int digit = number % 10;
