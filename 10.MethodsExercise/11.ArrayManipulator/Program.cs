@@ -28,7 +28,7 @@
 
                     case "max":
                     case "min":
-                        string type = tokens[1]; // even or odd
+                        string type = tokens[1];
                         bool findMax = action == "max";
                         int resultIndex = FindMinMax(array, type, findMax);
                         Console.WriteLine(resultIndex == -1 ? "No matches" : resultIndex.ToString());
@@ -37,7 +37,7 @@
                     case "first":
                     case "last":
                         int count = int.Parse(tokens[1]);
-                        string parity = tokens[2]; // even or odd
+                        string parity = tokens[2];
                         bool firstElements = action == "first";
 
                         if (count > array.Length)
@@ -62,11 +62,11 @@
         static int FindMinMax(int[] array, string type, bool findMax)
         {
             var numbers = array
-                .Select((num, i) => new { num, i }) // Store both number and index
-                .Where(x => (type == "even" ? x.num % 2 == 0 : x.num % 2 != 0)) // Filter even/odd
+                .Select((num, i) => new { num, i })
+                .Where(x => (type == "even" ? x.num % 2 == 0 : x.num % 2 != 0))
                 .ToList();
 
-            if (!numbers.Any()) return -1; // No matches
+            if (!numbers.Any()) return -1;
 
             return findMax
                 ? numbers.OrderByDescending(x => x.num).ThenByDescending(x => x.i).First().i
