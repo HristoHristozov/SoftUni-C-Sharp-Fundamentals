@@ -2,9 +2,24 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello, World!");
+            int numberOfProducts = int.Parse(Console.ReadLine());
+
+            var products = new List<string>();
+
+            for (int i = 0; i < numberOfProducts; i++)
+            {
+                products.Add(Console.ReadLine());
+            }
+
+            products.Sort();
+            int counter = 1;
+            foreach (var product in products)
+            {
+                Console.WriteLine($"{counter}.{product}");
+                counter++;
+            }
         }
     }
 }
