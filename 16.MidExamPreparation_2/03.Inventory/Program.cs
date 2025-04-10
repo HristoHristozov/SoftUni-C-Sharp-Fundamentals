@@ -53,8 +53,6 @@
 
                 }
 
-
-
             }
 
             Console.WriteLine(String.Join(", ", inventory));
